@@ -2,6 +2,6 @@ package decorator
 
 abstract class Beverage {
 
-	private description = "Unknown Beverage"
+	def description = "Unknown Beverage"
 	abstract Number cost()
 }
