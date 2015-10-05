@@ -1,4 +1,4 @@
-package factorymethod.ingredients
+package factories.ingredients
 
 class MarinaraSauce extends Sauce {
 

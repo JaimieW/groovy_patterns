@@ -1,7 +1,7 @@
-package factorymethod.creator
+package factories.creator
 
-import factorymethod.factory.NYPizzaIngredientFactory
-import factorymethod.product.*
+import factories.factory.NYPizzaIngredientFactory
+import factories.product.*
 
 class NYPizzaStore extends PizzaStore {
 

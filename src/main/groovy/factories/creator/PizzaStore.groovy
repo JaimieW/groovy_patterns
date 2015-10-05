@@ -1,4 +1,4 @@
-package factorymethod.creator
+package factories.creator
 
 import factorymethod.product.Pizza
 

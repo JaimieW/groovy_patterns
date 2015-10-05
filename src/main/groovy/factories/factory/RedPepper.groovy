@@ -1,4 +1,4 @@
-package factorymethod.factory
+package factories.factory
 
 import factorymethod.ingredients.Veggies
 

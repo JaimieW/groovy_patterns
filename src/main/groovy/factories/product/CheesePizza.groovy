@@ -1,20 +1,19 @@
-package factorymethod.product
+package factories.product
 
-class ClamPizza extends Pizza {
+class CheesePizza extends Pizza {
 
 	def ingredientFactory
 	
-	ClamPizza(factory){
-		this.ingredientFactory = factory
+	CheesePizza(ingredientFactory){
+		this.ingredientFactory = ingredientFactory
 	}
 	
 	@Override
-	public void prepare() {
+	void prepare() {
 		println "Preparing $name"
 		dough = ingredientFactory.createDough()
 		sauce = ingredientFactory.createSauce()
 		cheese = ingredientFactory.createCheese()
-		clams = ingredientFactory.createClams()
 	}
 
 }

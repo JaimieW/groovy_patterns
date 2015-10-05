@@ -1,4 +1,4 @@
-package factorymethod.product
+package factories.product
 
 abstract class Pizza {
 

@@ -1,6 +1,6 @@
-package factorymethod.product
+package factories.product
 
-class VeggiePizza extends Pizza {
+class PepperoniPizza extends Pizza {
 
 	@Override
 	public void prepare() {
