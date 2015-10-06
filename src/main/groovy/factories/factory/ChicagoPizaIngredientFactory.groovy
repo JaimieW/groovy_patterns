@@ -21,14 +21,12 @@ class ChicagoPizaIngredientFactory implements PizzaIngredientFactory {
 
 	@Override
 	Veggies[] createVeggies() {
-		// TODO Auto-generated method stub
 		return [new BlackOlives(), new Spinach(), new Eggplant()];
 	}
 
 	@Override
-	Pepperoni createperpperoni() {
-		// TODO Auto-generated method stub
-		return null;
+	Pepperoni createPepperoni() {
+		return new SlicedPepperoni()
 	}
 
 	@Override

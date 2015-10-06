@@ -8,6 +8,6 @@ interface PizzaIngredientFactory {
 	Sauce createSauce()
 	Cheese createCheese()
 	Veggies[] createVeggies()
-	Pepperoni createperpperoni()
+	Pepperoni createPepperoni()
 	Clams createClams()
 }

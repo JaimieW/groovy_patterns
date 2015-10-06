@@ -25,7 +25,7 @@ class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 	}
 
 	@Override
-	Pepperoni createperpperoni() {
+	Pepperoni createPepperoni() {
 		return new SlicedPepperoni()
 	}
 

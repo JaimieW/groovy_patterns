@@ -1,5 +1,6 @@
 package factories.product
 
+
 class CheesePizza extends Pizza {
 
 	def ingredientFactory

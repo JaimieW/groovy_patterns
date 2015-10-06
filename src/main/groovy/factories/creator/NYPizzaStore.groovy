@@ -8,7 +8,7 @@ class NYPizzaStore extends PizzaStore {
 	
 	@Override
 	protected Pizza createPizza(type) {
-		def pizza
+		Pizza pizza
 		def ingredientFactory = new NYPizzaIngredientFactory()
 		switch(type){
 			case "cheese":
