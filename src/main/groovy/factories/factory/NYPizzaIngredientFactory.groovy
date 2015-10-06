@@ -1,6 +1,6 @@
 package factories.factory
 
-import factorymethod.ingredients.*
+import factories.ingredients.*
 
 class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 

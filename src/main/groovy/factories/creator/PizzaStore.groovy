@@ -1,6 +1,6 @@
 package factories.creator
 
-import factorymethod.product.Pizza
+import factories.product.Pizza
 
 abstract class PizzaStore {
 
