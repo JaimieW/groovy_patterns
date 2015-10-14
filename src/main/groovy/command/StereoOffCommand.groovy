@@ -8,4 +8,9 @@ class StereoOffCommand implements Command {
 	@Override
 	public void execute() {stereo.off()	}
 
+	@Override
+	public void undo() { // TODO undo should use state
+		stereo.on()
+	}
+
 }

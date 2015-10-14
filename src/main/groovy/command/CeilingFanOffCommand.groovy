@@ -1,12 +1,12 @@
 package command
 
-class CeilingFanOffCommand implements Command {
-	def fan
-	CeilingFanOffCommand(fan) {this.fan = fan	}
+class CeilingFanOffCommand extends CeilingFanCommand {
+	
+	CeilingFanOffCommand(fan) {this.ceilingFan = fan	}
 
 	@Override
 	public void execute() {
-		fan.off()
+		prevSpeed = ceilingFan.getSpeed()
+		ceilingFan.off()
 	}
-
 }

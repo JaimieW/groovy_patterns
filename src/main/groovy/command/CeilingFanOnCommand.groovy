@@ -12,4 +12,5 @@ class CeilingFanOnCommand implements Command {
 		fan.high()
 	}
 
+	@Override void undo() {}
 }

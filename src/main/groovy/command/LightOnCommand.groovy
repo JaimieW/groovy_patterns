@@ -4,13 +4,9 @@ class LightOnCommand implements Command {
 
 	def light
 	
-	LightOnCommand(light){
-		this.light = light
-	}
+	LightOnCommand(light){ this.light = light }
 	
-	@Override
-	public void execute() {
-		light.on()
-	}
+	@Override void execute() {light.on()}
+	@Override void undo() {light.off()}
 
 }
