@@ -1,10 +1,10 @@
 package command
 
-class GarageDoorOpen implements Command {
+class GarageDoorOpenCommand implements Command {
 
 	def door
 	
-	GarageDoorOpen(door){ this.door = door }
+	GarageDoorOpenCommand(door){ this.door = door }
 	
 	@Override
 	public void execute() {

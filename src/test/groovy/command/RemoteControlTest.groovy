@@ -8,6 +8,6 @@ remote.setCommand(lightOn)
 remote.buttonWasPressed()
 
 def garageDoor = new GarageDoor()
-def doorOpen = new GarageDoorOpen(garageDoor)
+def doorOpen = new GarageDoorOpenCommand(garageDoor)
 remote.setCommand(doorOpen)
 remote.buttonWasPressed()
