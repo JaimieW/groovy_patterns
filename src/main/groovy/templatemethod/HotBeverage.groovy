@@ -6,7 +6,9 @@ abstract class HotBeverage {
 		boilWater()
 		brew()
 		pourInCup()
-		addCondiments()
+		if(wantsCondiments()) {
+			addCondiments()
+		}
 	}
 	
 	abstract void brew()
@@ -17,4 +19,5 @@ abstract class HotBeverage {
 	void pourInCup() {
 		println "pouring into cup"
 	}
+	boolean wantsCondiments() { return true }
 }
