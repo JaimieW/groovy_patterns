@@ -2,17 +2,15 @@ package iterator
 
 class DinerMenuIterator implements Iterator {
 
-	MenuItem[] items
+	MenuItem[] items // would use a collection, but leaving here as part of exercise
 	int position = 0
 	
 	DinerMenuIterator(items) {
 		this.items = items
 	}
 	
-	Object next() {
-		def menuItem = items[position]
-		position++
-		return menuItem // could be replaced by return items[position++] ????
+	def next() {
+		return items[position++]
 	}
 	
 	boolean hasNext() {

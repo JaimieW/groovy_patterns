@@ -2,10 +2,10 @@ package iterator
 
 class PancakeHouseMenu {
 
-	ArrayList menuItems
+	def menuItems
 
 	PancakeHouseMenu() {
-		this.menuItems = new ArrayList()
+		this.menuItems = []
         addItem("KB Breakfast Pancake", "pancake, scrambled egg, toast", true, 2.99 )
 		addItem("Breakfast Pancake", "pancake, fried egg, sausage", false, 2.99 )
 		addItem("Blueberry Pancake", "pancake, fresh blue berries", true, 3.49 )

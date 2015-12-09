@@ -4,10 +4,10 @@ class DinerMenu {
 
 	static final int MAX_ITEMS = 6
 	int numberOfItems = 0
-	MenuItem[] menuItems
+	def menuItems
 	
 	DinerMenu() {
-		menuItems = new MenuItem[MAX_ITEMS]
+		menuItems = new MenuItem[MAX_ITEMS] // would normally use a collection but leaving for purpose of exercise
 		
 		addItem("Veggie BLT", "Fake bacon, Lettuce, tomato on wheat", true, 2.99)
 		addItem("BLT", "Bacon, Lettuce, tomato on wheat", false, 2.99)

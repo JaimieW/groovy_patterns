@@ -2,17 +2,15 @@ package iterator
 
 class PancakeHouseIterator implements Iterator {
 
-	ArrayList items
+	def items
 	int position = 0
 	
 	PancakeHouseIterator(items) {
 		this.items = items
 	}
 	
-	Object next() {
-		def menuItem = items.get(position)
-		position++
-		return menuItem
+	def next() {
+		return items.get(position++)
 	}
 	
 	boolean hasNext() {

@@ -16,7 +16,7 @@ class Waitress {
 		printMenuItems(dinerIterator)
 	}
 	
-	private void printMenuItems(Iterator iter) {
+	private void printMenuItems(Iterator iter) { // interesting that cannot have private overloaded method
 		while(iter.hasNext()) {
 			def menuItem = iter.next()
 			println "${menuItem.name}, ${menuItem.price} -- ${menuItem.description}"
