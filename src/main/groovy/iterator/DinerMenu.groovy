@@ -25,7 +25,7 @@ class DinerMenu {
 		}
 	}
 	
-	Iterator createIterator() {
+	def createIterator() {
 		return new DinerMenuIterator(menuItems)
 	}
 }

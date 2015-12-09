@@ -16,8 +16,8 @@ class PancakeHouseMenu {
 		menuItems.add(new MenuItem(name: name, description: desc, vegetarian: isVeg, price: cost))
 	}
 	
-	Iterator createIterator() {
-		return new PancakeHouseIterator(menuItems)
+	def createIterator() {
+		menuItems.iterator()
 	}
 	
 	

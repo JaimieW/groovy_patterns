@@ -10,16 +10,14 @@ class Waitress {
 		def dinerIterator = dinerMenu.createIterator()
 		
 		println "MENU\n----------------------\nBREAKFAST"
-		printMenuItems(pancakeIterator)
+		pancakeHouseMenu.menuItems.each { menuItem ->
+			println "${menuItem.name}, ${menuItem.price} -- ${menuItem.description}"
+		}
 		
 		println "\nLUNCH"
-		printMenuItems(dinerIterator)
-	}
-	
-	private void printMenuItems(Iterator iter) { // interesting that cannot have private overloaded method
-		while(iter.hasNext()) {
-			def menuItem = iter.next()
-			println "${menuItem.name}, ${menuItem.price} -- ${menuItem.description}"
+		dinerMenu.menuItems.each { //needs null check because its an array
+			if(it)
+				println "${it.name}, ${it.price} -- ${it.description}"
 		}
 	}
 }
