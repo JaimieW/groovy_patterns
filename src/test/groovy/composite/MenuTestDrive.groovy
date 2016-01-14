@@ -20,3 +20,4 @@ def waitress  = new Waitress(allMenus: allMenus)
 waitress.printMenu()
 
 
+waitress.printVegetarianMenu()

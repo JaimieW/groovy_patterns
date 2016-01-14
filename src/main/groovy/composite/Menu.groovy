@@ -5,6 +5,7 @@ class Menu extends MenuComponent {
 	List menuComponents = []
 	def name
 	def description
+	def iterator
 	
 	@Override void add(menuComponent) {
 		menuComponents.add(menuComponent)
@@ -23,5 +24,10 @@ class Menu extends MenuComponent {
 		menuComponents.each {
 			it.print()
 		}
+	}
+	
+	@Override 
+	def createIterator() {
+		return iterator?:new CompositeIterator(menuComponents.iterator())
 	}
 }

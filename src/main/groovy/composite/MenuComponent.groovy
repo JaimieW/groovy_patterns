@@ -10,4 +10,5 @@ abstract class MenuComponent {
 	def getPrice() { throw new UnsupportedOperationException() }
 	def isVegetarian() { throw new UnsupportedOperationException() }
 	void print() { throw new UnsupportedOperationException() }
+	def createIterator() {throw new UnsupportedOperationException() }
 }

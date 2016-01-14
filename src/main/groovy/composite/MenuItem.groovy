@@ -34,4 +34,6 @@ class MenuItem extends MenuComponent {
 		println ", $price"
 		println "\t-- $description"
 	}
+	
+	@Override def createIterator() { return new NullIterator() }
 }
